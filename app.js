@@ -2,6 +2,6 @@
 const page = new Vue({
     el: '#page',
     data: {
-        titulo: 'INICIAR SESION'
+        titulo: 'P&J'
     }
 });
