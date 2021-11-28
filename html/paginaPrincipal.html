@@ -12,9 +12,36 @@
   </head>
   <body>
     <!-- Encabezado de pagina -->
-    <div id="page">
-        <encabezado></encabezado>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a href="#"><img src="../images/user.png" class="img-fluid me-3" alt="user icon" width="50" height="50"></a>
+          <!-- <a class="navbar-brand" href="paginaPrincipal.html"><h1>P&J</h1></a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="paginaPrincipal.html">Principal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Entretenimiento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contactenos</a>
+              </li>
+            </ul>
+            <form class="d-flex justify-content-end">
+              <input class="form-control col-md-3 me-2" type="search" placeholder="Buscar..." aria-label="Search">
+              <button class="btn btn-outline-success bg-light text-primary me-3" type="submit">Buscar</button>
+            </form>
+            <button class="btn btn-danger rounded-pill mt-2" onclick="location.href = 'iniciarSesion.html';">SALIR</button>
+          </div>
+        </div>
+      </nav>
 
     
     
