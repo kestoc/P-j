@@ -1,6 +1,6 @@
-En este proyecto se encuentra todo el codigo relacionado con el proyecto final de la materia Procesos y Diseño de Software.
+En este proyecto se encuentra todos los archivos relacionados con el proyecto final de la materia Procesos y Diseño de Software.
 
-Las tecnologias a usar son:
-- VueJS con CDN
-- Boostrap
-- HTML/CSS/JavaScript
+Las tecnologias usadas son:
+- VueJS con CDN.
+- Boostrap 5.
+- HTML/CSS/JavaScript.
