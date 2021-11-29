@@ -47,5 +47,5 @@ Vue.component('encabezado',{
 
 // Objeto Vue
 const page = new Vue({
-    el: '#page',
+    el: '#page'
 });
