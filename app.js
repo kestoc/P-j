@@ -6,7 +6,7 @@ Vue.component('historias', {
         <div class="card">
             <img src="../images/figure2.jpg" class="card-img-top">
             <div class="card-body">
-                <h5 class="card-title">HISTORIAS</h5>
+                <h5 class="card-title">HISTORIA</h5>
                 <p class="card-text">Historias de usuario donde se pueden ver sus anecdotas, viajes, experiencias y entre otras cosas interesantes.</p>
             </div>
         </div>

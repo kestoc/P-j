@@ -14,11 +14,22 @@
     <!-- Menu y encabezado de la pagina -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-            <a href="#"><img src="../images/user.png" class="img-fluid me-3" alt="user icon" width="50" height="50"></a>
+            
+            <!-- SubMenu del usuario -->
+            <div class="dropdown">
+                <img src="../images/user.png" class="img-fluid me-3 dropdown-toggle" type="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false" alt="user icon" width="50" height="50">
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                    <li class="dropdown-item" href="#">Perfil</li>
+                    <li class="dropdown-item"><a class="btn btn-danger"href="iniciarSesion.html">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+            
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Menu de navegacion -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="paginaPrincipal.html">Principal</a>
@@ -33,14 +44,15 @@
                 <a class="nav-link active" href="#">Contactenos</a>
               </li>
             </ul>
+            <!-- Barra de busqueda -->
             <form class="d-flex justify-content-end">
               <input class="form-control col-md-3 me-2" type="search" placeholder="Buscar..." aria-label="Search">
-              <button class="btn btn-outline-success bg-light text-primary me-3" type="submit">Buscar</button>
+              <button class="btn btn-outline-success bg-light text-primary" type="submit">Buscar</button>
             </form>
-            <button class="btn btn-danger rounded-pill mt-2" onclick="location.href = 'iniciarSesion.html';">SALIR</button>
           </div>
         </div>
-      </nav>
+
+    </nav>
 
       <!-- Listar eventos e historias de usuario -->
 
@@ -59,6 +71,7 @@
                     </ul>
 
                     <div class="tab-content" id="page">                        
+                        <!-- Listar eventos -->
                         <div class="tab-pane active mt-3" id="evento">
                             <div class="row g-4">
                                 <eventos></eventos>
@@ -69,7 +82,7 @@
                                 <eventos></eventos>                                    
                             </div>
                         </div>                        
-
+                        <!-- Listar historias de usuario -->
                         <div class="tab-pane mt-3" id="historia">
                             <div class="row g-4">
                                 <historias></historias>
