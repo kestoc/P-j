@@ -1,4 +1,36 @@
-// Componente de encabezado Vue
+// Componente para visualizar las hisotiras de usuario
+Vue.component('historias', {
+    template:
+    `
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <img src="../images/figure2.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">HISTORIAS</h5>
+                <p class="card-text">Historias de usuario donde se pueden ver sus anecdotas, viajes, experiencias y entre otras cosas interesantes.</p>
+            </div>
+        </div>
+    </div>
+    `
+})
+
+// Componente para visualizar eventos
+Vue.component('eventos',{
+    template:
+    `
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <img src="../images/figure1.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">EVENTO</h5>
+                <p class="card-text">Eventos publicos y privados para personas del comun, jubilados y pensionados.</p>
+            </div>
+        </div>
+    </div>
+    `
+})
+
+// Componente de encabezado
 Vue.component('encabezado',{
     template:
     `
@@ -8,12 +40,12 @@ Vue.component('encabezado',{
     `,
     data(){
         return {
-            titulo: 'P&J'    
+            titulo: 'P&J'
         }
     }
 })
 
 // Objeto Vue
 const page = new Vue({
-    el: '#page'
+    el: '#page',
 });
